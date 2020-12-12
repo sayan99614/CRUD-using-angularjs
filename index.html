@@ -16,13 +16,13 @@
     <script src="app.js"></script>  
     <title>CRUD APP</title>
   </head>
-  <body class="" style="background-color: #4a148c;" ng-app="myApp" ng-controller="myController">
-      <div class="container-fluid shadow-lg rounded" style="background-color: #4a1091;">
+  <body class="" style="background-color: #6200EA;" ng-app="myApp" ng-controller="myController">
+      <div class="container-fluid shadow rounded" style="background-color: #6200EA;">
           <div class="text-center text-white mb-5">
               <h3 class="p-2">USER MANAGEMENT SYSTEM</h3>
           </div>
       </div>
-    <div class="container shadow-lg" style="background-color: #422569;">  		
+    <div class="container shadow-lg" style="background-color: #651FFF;">  		
 	<button type="button" class="btn btn-dark shadow btn-lg pull-right mt-3 mb-2" data-toggle="modal" data-target="#myModal">Add New</button>
 	<h2 class="bg-light shadow-lg  text-center">ALL USERS</h2>
 		<div class="clearfix"></div>
@@ -33,7 +33,7 @@
 	  <button type="button" class="close" aria-label="Close"><span aria-hidden="true" ng-click="clearInfo()">&times;</span></button>
 	  {{info}}
 	</div>
-		<table class="table table-hover table-dark rounded shadow-lg">
+		<table class="table rounded text-white shadow-lg" style="background-color: #1B1B1B">
 	    <thead>
 	      <tr>
 	        <th>Index</th>
@@ -68,10 +68,10 @@
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
+    <div class="modal-content text-white" style="background-color:  #111111;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">New User Registration</h4>
+        <button type="button" class="close bg-danger shadow-sm" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
         <form class="form-horizontal">
@@ -98,14 +98,14 @@
 		  			  
 		  <div class="form-group">
 		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="submit" class="btn btn-success" data-dismiss="modal" ng-click="saveUser();">Save</button>
+		      <button type="submit" class="btn btn-outline-success" data-dismiss="modal" ng-click="saveUser();">Save</button>
 		    </div>
 		  </div>
 		</form>
       </div>
       <div class="modal-footer">
       	
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
 
@@ -118,10 +118,11 @@
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
+    <div class="modal-content text-white" style="background-color:  #111111;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Edit This User</h4>
+      	<h4 class="modal-title">Edit User</h4>
+        <button type="button" class="close bg-danger shadow" data-dismiss="modal">&times;</button>
+        
       </div>
       <div class="modal-body">
         <form class="form-horizontal">
@@ -148,14 +149,14 @@
 		  			  
 		  <div class="form-group">
 		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="button" class="btn btn-success" data-dismiss="modal">Done</button>
+		      <button type="button" class="btn btn-outline-success" data-dismiss="modal">Done!!</button>
 		    </div>
 		  </div>
 		</form>
       </div>
       <div class="modal-footer">
       	
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
 
